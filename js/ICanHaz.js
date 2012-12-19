@@ -519,7 +519,7 @@ var Mustache = function () {
     };
     
     // Use CommonJS if applicable
-    if (typeof require !== 'undefined') {
+    if (typeof require !== 'undefined' && typeof module !== 'undefined') {
         module.exports = ich;
     } else {
         // else attach it to the window
