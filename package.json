@@ -1,0 +1,7 @@
+{
+  "name": "nw-db-demo",
+  "main": "index.html",
+  "window": {
+      "toolbar": false
+    }
+}
