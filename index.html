@@ -2,7 +2,7 @@
 <head>
   <title>Node Webkit DB Demo</title>
   <script src="js/zepto.min.js" type="text/javascript"></script>
-  <script src="js/ICanHaz.min.js" type="text/javascript"></script>
+  <script src="js/ICanHaz.js" type="text/javascript"></script>
 </head>
 <body>
 <script>
@@ -44,6 +44,7 @@ function show_data(data){
   $('#items').html('');
   $.each(data, function(entryIndex, item){
     item_html = ich.item_html(item);
+    // item_html = $('<div>'+item.id+': '+ item.text +'</div>');
     $('#items').append(item_html);
   });       
 }
